@@ -1,27 +1,25 @@
-/** @type {import('tailwindcss').Config} */
+// Colours are CSS variables (assets/css/main.css), so one class works in both themes.
+const token = (name) => `rgb(var(--c-${name}) / <alpha-value>)`
+
 export default {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  darkMode: 'class',
+  content: [],
   theme: {
     extend: {
       colors: {
-        dark: "#181717",
-        light: "#F3F3F3",
-        primary: "#606060",
-        secondary: "#2429AF",
+        page: token('page'),
+        fg: token('fg'),
+        muted: token('muted'),
+        accent: token('accent'),
+        onaccent: token('onaccent'),
+        // Borders get stronger in light mode through --line-k, so border-line/10 works in both themes.
+        line: 'rgb(var(--c-line) / calc(<alpha-value> * var(--line-k)))',
       },
-      transform: {
-        "preserve-3d": "preserve-3d",
-      },
-      backfaceVisibility: {
-        hidden: "hidden",
-      },
-      rotateY: {
-        180: "180deg",
-      },
-      translate: {
-        "-full-8": "calc(-100% - 8px)",
+      fontFamily: {
+        sans: ['"Instrument Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Bricolage Grotesque"', '"Instrument Sans"', 'ui-sans-serif', 'sans-serif'],
+        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
       },
     },
   },
-  plugins: [],
-};
+}

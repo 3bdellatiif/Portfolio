@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme tokens (space-separated RGB so Tailwind can add opacity). */
+:root {                      /* light: tinted page, white cards, dark text, visible borders */
+  --c-page: 226 231 240;
+  --c-fg: 15 23 42;
+  --c-muted: 71 85 105;
+  --c-line: 15 23 42;
+  --c-accent: 161 85 6;
+  --c-onaccent: 255 255 255;
+  --c-card: 255 255 255;
+  --card-a: 0.92;
+  --line-k: 1.8;
+  --shadow-a: 0.14;
+}
+.dark {
+  --c-page: 7 10 18;
+  --c-fg: 226 232 240;
+  --c-muted: 148 163 184;
+  --c-line: 255 255 255;
+  --c-accent: 245 180 90;
+  --c-onaccent: 7 10 18;
+  --c-card: 255 255 255;
+  --card-a: 0.04;
+  --line-k: 1;
+  --shadow-a: 0;
+}
+
+@layer base {
+  html { scroll-padding-top: 5rem; color-scheme: light; }
+  html.dark { color-scheme: dark; }
+  body { @apply bg-page font-sans text-[1.0625rem] leading-relaxed text-fg/80 antialiased; }
+  h1, h2, h3 { @apply font-display tracking-tight text-fg; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-accent; }
+}
+
+@layer components {
+  .surface {
+    @apply rounded-2xl border border-line/10 backdrop-blur-xl;
+    background-color: rgb(var(--c-card) / var(--card-a));
+    box-shadow: 0 8px 24px -12px rgb(15 23 42 / var(--shadow-a));
+  }
+  .section { @apply mx-auto w-full max-w-5xl px-6 py-24 md:py-32; }
+  .chip { @apply inline-flex items-center gap-1.5 rounded-full border border-line/15 px-3 py-1 text-xs; }
+  .btn { @apply inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm font-semibold transition; }
+  .btn-primary { @apply btn bg-accent text-onaccent hover:opacity-90; }
+  .btn-ghost { @apply btn border border-line/25 text-fg hover:bg-fg/5; }
+  .field { @apply w-full rounded-xl border border-line/20 bg-transparent px-4 py-3 text-fg placeholder:text-muted focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/25; }
+  .nav-link { @apply text-muted transition hover:text-fg; }
+  .nav-link[data-active] { @apply text-fg; }
+}
+
+/* GSAP start state: only when animations will run (`js` class), so no-JS users see everything. */
+.js [data-hero],
+.js [data-reveal] { opacity: 0; transform: translateY(28px); }

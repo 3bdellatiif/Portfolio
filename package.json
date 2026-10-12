@@ -1,23 +1,23 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@iconify/vue": "^5.0.0",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.1"
+    "gsap": "^3.12.5",
+    "nuxt": "^3.15.4",
+    "simple-icons": "^16.34.0",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.3",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
-    "vite": "^6.3.5"
+    "@nuxt/fonts": "^0.10.3",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/tailwindcss": "^6.13.1"
   }
 }
