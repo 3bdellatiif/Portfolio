@@ -2,7 +2,6 @@
 const { owner } = usePortfolio()
 const form = reactive({ name: '', email: '', message: '' })
 
-// No backend: the browser validates the fields, then the message opens in the visitor's email app.
 function send() {
   const subject = encodeURIComponent(`Portfolio message from ${form.name}`)
   const body = encodeURIComponent(`${form.message}\n\n${form.name}\n${form.email}`)
@@ -31,7 +30,10 @@ function send() {
         <textarea id="message" v-model="form.message" class="field min-h-36 resize-y" rows="5" required minlength="20" />
       </div>
 
-      <button type="submit" class="btn-primary">Write the email</button>
+        <div class="w-full flex justify-center">
+      <button type="submit" class="btn-primary ">Write the email</button>
+
+        </div>
       <p class="text-sm text-muted">
         Opens your email app with the message ready to send to
         <a :href="`mailto:${owner.email}`" class="text-accent hover:underline">{{ owner.email }}</a>.

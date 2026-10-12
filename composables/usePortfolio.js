@@ -44,13 +44,8 @@ const projects = [
       "Kafka topics keyed by vehicle id keep per-asset ordering without global locks.",
       "A binary WebSocket diff protocol cut payloads by 80%.",
     ],
-    metrics: [
-      { value: "420 ms", label: "p95 latency" },
-      { value: "1.2M", label: "events / min" },
-      { value: "99.98%", label: "uptime" },
-    ],
-    stack: ["Nuxt", "TypeScript", "Kafka", "PostgreSQL", "Redis"],
-    link: "https://example.com/case-studies/meridian",
+    stack: ["HTML", "CSS", "JavaScript", "Nuxt"],
+    link: "#",
   },
 ];
 

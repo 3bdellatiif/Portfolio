@@ -1,6 +1,6 @@
 /// <reference types="@nuxtjs/tailwindcss" />
-/// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxtjs/color-mode" />
+/// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="@nuxt/fonts" />
 /// <reference path="types/nitro-layouts.d.ts" />
