@@ -20,17 +20,25 @@ const hover = (icon) => {
         :key="t.name"
         data-reveal
         class="surface group flex flex-col items-center gap-4 px-4 py-7 cursor-pointer"
-        :style="{ '--brand': hover(t.icon) }"
       >
-        <svg
+        <!-- Masked icon using current Tailwind classes -->
+        <span
           v-if="t.icon"
-          class="h-10 w-10 fill-muted transition-colors duration-300 group-hover:fill-[var(--brand)]"
-          viewBox="0 0 24 24"
+          class="h-10 w-10 bg-muted transition-colors duration-300 group-hover:bg-primary"
+          :style="{
+            maskImage: `url(${t.icon})`,
+            WebkitMaskImage: `url(${t.icon})`,
+            maskRepeat: 'no-repeat',
+            WebkitMaskRepeat: 'no-repeat',
+            maskPosition: 'center',
+            WebkitMaskPosition: 'center',
+            maskSize: 'contain',
+            WebkitMaskSize: 'contain',
+          }"
           role="img"
           :aria-label="`${t.name} logo`"
-        >
-          <path :d="t.icon.path" />
-        </svg>
+        />
+
         <span
           v-else
           class="grid h-10 w-10 place-items-center rounded-lg border border-muted/60 font-mono text-sm text-muted"
@@ -38,6 +46,7 @@ const hover = (icon) => {
         >
           {{ t.name.slice(0, 2) }}
         </span>
+
         <span class="text-sm font-medium text-fg">{{ t.name }}</span>
       </li>
     </ul>

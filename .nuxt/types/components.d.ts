@@ -16,11 +16,11 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 interface _GlobalComponents {
   AppFooter: typeof import("../../components/AppFooter.vue")['default']
   AppHeader: typeof import("../../components/AppHeader.vue")['default']
-  ContactSection: typeof import("../../components/ContactSection.vue")['default']
-  HeroSection: typeof import("../../components/HeroSection.vue")['default']
-  PrinciplesSection: typeof import("../../components/PrinciplesSection.vue")['default']
-  ProjectsSection: typeof import("../../components/ProjectsSection.vue")['default']
-  StackSection: typeof import("../../components/StackSection.vue")['default']
+  ContactItem: typeof import("../../components/contact/Item.vue")['default']
+  HomeContactSection: typeof import("../../components/home/ContactSection.vue")['default']
+  HomeHeroSection: typeof import("../../components/home/HeroSection.vue")['default']
+  HomeProjectsSection: typeof import("../../components/home/ProjectsSection.vue")['default']
+  HomeStackSection: typeof import("../../components/home/StackSection.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -47,11 +47,11 @@ interface _GlobalComponents {
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
   LazyAppFooter: LazyComponent<typeof import("../../components/AppFooter.vue")['default']>
   LazyAppHeader: LazyComponent<typeof import("../../components/AppHeader.vue")['default']>
-  LazyContactSection: LazyComponent<typeof import("../../components/ContactSection.vue")['default']>
-  LazyHeroSection: LazyComponent<typeof import("../../components/HeroSection.vue")['default']>
-  LazyPrinciplesSection: LazyComponent<typeof import("../../components/PrinciplesSection.vue")['default']>
-  LazyProjectsSection: LazyComponent<typeof import("../../components/ProjectsSection.vue")['default']>
-  LazyStackSection: LazyComponent<typeof import("../../components/StackSection.vue")['default']>
+  LazyContactItem: LazyComponent<typeof import("../../components/contact/Item.vue")['default']>
+  LazyHomeContactSection: LazyComponent<typeof import("../../components/home/ContactSection.vue")['default']>
+  LazyHomeHeroSection: LazyComponent<typeof import("../../components/home/HeroSection.vue")['default']>
+  LazyHomeProjectsSection: LazyComponent<typeof import("../../components/home/ProjectsSection.vue")['default']>
+  LazyHomeStackSection: LazyComponent<typeof import("../../components/home/StackSection.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

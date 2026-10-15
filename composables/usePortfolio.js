@@ -1,43 +1,56 @@
-import {
-  siHtml5,
-  siCss,
-  siJavascript,
-  siNuxt,
-  siPython,
-  siTailwindcss,
-  siBootstrap,
-  siTypescript,
-  siVuedotjs,
-} from "simple-icons";
-
 const owner = {
   name: "3bdellatiif",
   title: "Front end Engineer",
-  headline: "Abdelrahman Ibrahem",
+  headline: "Abdelrahman Abdullatiif",
   tagline: "Front end Engineer",
   blurb:
     "Software engineering student skilled in web development, responsive SPAs, and RESTful API integration.Fast-learning problem solver seeking an opportunity to contribute to impactful projects while expanding technical expertise..",
-  email: "abdelrahmanlatif04@example.com",
-  github: "https://github.com/3bdellatiif",
-  linkedin: "https://www.linkedin.com/in/3bdellatiif",
+  contact: [
+    {
+      title: "GitHub",
+      icon: "https://api.iconify.design/mdi:github.svg?color=%23ffffff",
+      url: "https://github.com/3bdellatiif",
+    },
+    {
+      title: "LinkedIn",
+      icon: "https://api.iconify.design/mdi:linkedin.svg?color=%23ffffff",
+      url: "https://www.linkedin.com/in/3bdellatiif",
+    },
+    {
+      title: "Email",
+      icon: "https://api.iconify.design/mdi:email-outline.svg?color=%23ffffff",
+      url: "mailto:abdelrahmanlatif04@gmail.com",
+    },
+    {
+      title: "X (Twitter)",
+      icon: "https://api.iconify.design/ri:twitter-x-fill.svg?color=%23ffffff",
+      url: "http://x.com/3bdellatiif/",
+    },
+    {
+      title: "portfolio",
+      icon: "https://api.iconify.design/lucide:globe.svg?color=%23ffffff",
+      url: "https://3bdellatiif.com/",
+    },
+  ],
 };
 
 const tech = [
-  { name: "HTML", icon: siHtml5 },
-  { name: "CSS", icon: siCss },
-  { name: "JavaScript", icon: siJavascript },
-  { name: "TypeScript", icon: siTypescript },
-  { name: "Vue 3", icon: siVuedotjs },
-  { name: "Nuxt", icon: siNuxt },
-  { name: "Tailwind CSS", icon: siTailwindcss },
-  { name: "Bootstrap CSS", icon: siBootstrap },
-  { name: "Python", icon: siPython },
+  { name: "HTML", icon: "https://cdn.simpleicons.org/html5" },
+  { name: "CSS", icon: "https://cdn.simpleicons.org/css" },
+  { name: "JavaScript", icon: "https://cdn.simpleicons.org/javascript" },
+  { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript" },
+  { name: "Vue 3", icon: "https://cdn.simpleicons.org/vuedotjs" },
+  { name: "Nuxt", icon: "https://cdn.simpleicons.org/nuxt" },
+  { name: "Tailwind CSS", icon: "https://cdn.simpleicons.org/tailwindcss" },
+  { name: "Bootstrap CSS", icon: "https://cdn.simpleicons.org/bootstrap" },
+  { name: "Python", icon: "https://cdn.simpleicons.org/python" },
 ];
 
 const projects = [
   {
     title: "Meridian",
     tagline: "Real-time logistics control tower",
+    //may add img(s)
     summary:
       "A live operations console tracking 40k vehicles. Dispatchers see changes in under a second, even at regional peaks.",
     highlights: [
@@ -45,32 +58,12 @@ const projects = [
       "A binary WebSocket diff protocol cut payloads by 80%.",
     ],
     stack: ["HTML", "CSS", "JavaScript", "Nuxt"],
-    link: "#",
+    url: "#",
   },
 ];
-
-// const principles = [
-//   {
-//     title: "Speed is a feature",
-//     text: "Heavy work is lazy-loaded. Nothing blocks the first paint.",
-//   },
-//   {
-//     title: "Small, honest abstractions",
-//     text: "Composables own behaviour, components own presentation.",
-//   },
-//   {
-//     title: "Accessible by default",
-//     text: "Semantic HTML, visible focus, readable contrast in both themes, no motion for people who ask for none.",
-//   },
-//   {
-//     title: "Plan for failure",
-//     text: "Content stays visible if animation fails, and error states say what happened.",
-//   },
-// ];
 
 export const usePortfolio = () => ({
   owner,
   tech,
   projects,
-  // principles
 });
