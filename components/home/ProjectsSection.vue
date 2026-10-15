@@ -6,10 +6,11 @@ const { projects } = usePortfolio();
   <section id="projects" class="section">
     <div data-reveal class="mb-12">
       <h2 class="text-3xl font-semibold md:text-5xl">Selected work</h2>
-      <p class="mt-4 max-w-2xl text-lg text-muted">
+      <p v-if="projects.length != 0" class="mt-4 max-w-2xl text-lg text-muted">
         Systems I architected end to end, with the decisions and results behind
         them.
       </p>
+      <p v-else class="mt-4 max-w-2xl text-3xl text-muted">Coming soon!</p>
     </div>
 
     <ul class="grid gap-6 md:grid-cols-2">
@@ -32,7 +33,7 @@ const { projects } = usePortfolio();
             >
               {{ h }}
             </li>
-          </ul> 
+          </ul>
 
           <div class="mt-auto space-y-4 border-t border-line/10 pt-5">
             <ul class="flex flex-wrap gap-2">

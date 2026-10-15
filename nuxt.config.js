@@ -10,6 +10,9 @@ export default defineNuxtConfig({
   routeRules: { "/": { prerender: true } },
   nitro: {
     preset: "static",
+    prerender: {
+      routes: ["/linktree"],
+    },
   },
   app: {
     head: {

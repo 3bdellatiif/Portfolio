@@ -29,7 +29,7 @@ const owner = {
     {
       title: "portfolio",
       icon: "https://api.iconify.design/lucide:globe.svg?color=%23ffffff",
-      url: "https://3bdellatiif.com/",
+      url: "/",
     },
   ],
 };
@@ -47,19 +47,19 @@ const tech = [
 ];
 
 const projects = [
-  {
-    title: "Meridian",
-    tagline: "Real-time logistics control tower",
-    //may add img(s)
-    summary:
-      "A live operations console tracking 40k vehicles. Dispatchers see changes in under a second, even at regional peaks.",
-    highlights: [
-      "Kafka topics keyed by vehicle id keep per-asset ordering without global locks.",
-      "A binary WebSocket diff protocol cut payloads by 80%.",
-    ],
-    stack: ["HTML", "CSS", "JavaScript", "Nuxt"],
-    url: "#",
-  },
+  // {
+  //   title: "Meridian",
+  //   tagline: "Real-time logistics control tower",
+  //   //may add img(s)
+  //   summary:
+  //     "A live operations console tracking 40k vehicles. Dispatchers see changes in under a second, even at regional peaks.",
+  //   highlights: [
+  //     "Kafka topics keyed by vehicle id keep per-asset ordering without global locks.",
+  //     "A binary WebSocket diff protocol cut payloads by 80%.",
+  //   ],
+  //   stack: ["HTML", "CSS", "JavaScript", "Nuxt"],
+  //   url: "#",
+  // },
 ];
 
 export const usePortfolio = () => ({

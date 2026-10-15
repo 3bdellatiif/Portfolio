@@ -19,12 +19,11 @@ const hover = (icon) => {
         v-for="t in tech"
         :key="t.name"
         data-reveal
-        class="surface group flex flex-col items-center gap-4 px-4 py-7 cursor-pointer"
+        class="surface group flex flex-col items-center gap-4 px-4 py-7"
       >
-        <!-- Masked icon using current Tailwind classes -->
         <span
           v-if="t.icon"
-          class="h-10 w-10 bg-muted transition-colors duration-300 group-hover:bg-primary"
+          class="w-10 aspect-square bg-muted"
           :style="{
             maskImage: `url(${t.icon})`,
             WebkitMaskImage: `url(${t.icon})`,
