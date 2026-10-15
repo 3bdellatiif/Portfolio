@@ -12,7 +12,6 @@ export default {
         muted: token('muted'),
         accent: token('accent'),
         onaccent: token('onaccent'),
-        // Borders get stronger in light mode through --line-k, so border-line/10 works in both themes.
         line: 'rgb(var(--c-line) / calc(<alpha-value> * var(--line-k)))',
       },
       fontFamily: {

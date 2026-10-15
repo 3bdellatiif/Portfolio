@@ -16,6 +16,7 @@ type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {},
 interface _GlobalComponents {
   AppFooter: typeof import("../../components/AppFooter.vue")['default']
   AppHeader: typeof import("../../components/AppHeader.vue")['default']
+  ThemeBtn: typeof import("../../components/ThemeBtn.vue")['default']
   ContactItem: typeof import("../../components/contact/Item.vue")['default']
   HomeContactSection: typeof import("../../components/home/ContactSection.vue")['default']
   HomeHeroSection: typeof import("../../components/home/HeroSection.vue")['default']
@@ -47,6 +48,7 @@ interface _GlobalComponents {
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
   LazyAppFooter: LazyComponent<typeof import("../../components/AppFooter.vue")['default']>
   LazyAppHeader: LazyComponent<typeof import("../../components/AppHeader.vue")['default']>
+  LazyThemeBtn: LazyComponent<typeof import("../../components/ThemeBtn.vue")['default']>
   LazyContactItem: LazyComponent<typeof import("../../components/contact/Item.vue")['default']>
   LazyHomeContactSection: LazyComponent<typeof import("../../components/home/ContactSection.vue")['default']>
   LazyHomeHeroSection: LazyComponent<typeof import("../../components/home/HeroSection.vue")['default']>

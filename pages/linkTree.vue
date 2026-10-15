@@ -2,6 +2,7 @@
   <main
     class="text-zinc-100 h-full flex items-center justify-center selection:bg-emerald-500/20 selection:text-emerald-300"
   >
+    <ThemeBtn class="absolute right-5 top-5" />
     <div class="w-full max-w-sm flex flex-col items-center">
       <header class="anim-header flex flex-col items-center mb-8 text-center">
         <div
