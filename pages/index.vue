@@ -10,10 +10,12 @@ useSeoMeta({
 </script>
 
 <template>
-  <hero-section />
-  <HomeHeroSection />
-  <HomeProjectsSection />
-  <HomeStackSection />
-  <!-- <PrinciplesSection /> -->
-  <HomeContactSection />
+  <main>
+    <hero-section />
+    <HomeHeroSection />
+    <HomeProjectsSection />
+    <HomeStackSection />
+    <!-- <PrinciplesSection /> -->
+    <HomeContactSection />
+  </main>
 </template>

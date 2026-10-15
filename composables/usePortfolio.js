@@ -29,7 +29,7 @@ const owner = {
     {
       title: "portfolio",
       icon: "https://api.iconify.design/lucide:globe.svg?color=%23ffffff",
-      url: "/",
+      url: "https://3bdellatiif.com",
     },
   ],
 };
