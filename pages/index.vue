@@ -14,7 +14,6 @@ useSeoMeta({
     <HomeHeroSection />
     <HomeProjectsSection />
     <HomeStackSection />
-    <!-- <PrinciplesSection /> -->
     <HomeContactSection />
   </main>
 </template>

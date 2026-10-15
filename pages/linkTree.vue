@@ -61,9 +61,11 @@
 
 <script setup>
 const { owner } = usePortfolio();
+import { useSeoMeta } from "nuxt/app";
 import qrImage from "../assets/qr-code.png";
 const isFlipped = ref(false);
 definePageMeta({
   layout: "contact",
+  head
 });
 </script>
