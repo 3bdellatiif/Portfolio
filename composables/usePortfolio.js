@@ -27,6 +27,11 @@ const owner = {
       url: "http://x.com/3bdellatiif/",
     },
     {
+      title: "Whatsapp",
+      icon: "https://api.iconify.design/mdi:whatsapp.svg?color=%23ffffff",
+      url: "https://wa.me/01157933363",
+    },
+    {
       title: "portfolio",
       icon: "https://api.iconify.design/lucide:globe.svg?color=%23ffffff",
       url: "/",

@@ -2,7 +2,6 @@
   <main
     class="text-zinc-100 h-full flex items-center justify-center selection:bg-emerald-500/20 selection:text-emerald-300"
   >
-    <ThemeBtn class="absolute right-5 top-5" />
     <div class="w-full max-w-sm flex flex-col items-center">
       <header class="anim-header flex flex-col items-center mb-8 text-center">
         <div
@@ -61,11 +60,9 @@
 
 <script setup>
 const { owner } = usePortfolio();
-import { useSeoMeta } from "nuxt/app";
-import qrImage from "../assets/qr-code.png";
+import qrImage from "../assets/icons/qr-code.png";
 const isFlipped = ref(false);
 definePageMeta({
   layout: "contact",
-  head
 });
 </script>

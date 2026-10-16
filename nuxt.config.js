@@ -19,10 +19,15 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: "en" },
       script: [
         {
-          // `js` class = "animations will run": scroll-reveal elements start hidden (no flash).
-          // Not added for reduced-motion users, who just see everything.
           innerHTML:
             "if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js')",
+        },
+      ],
+      link: [
+        {
+          rel: "icon",
+          type: "image/svg+xml",
+          href: "./assets/icons/favicon.svg",
         },
       ],
     },
