@@ -60,7 +60,7 @@
 
 <script setup>
 const { owner } = usePortfolio();
-import qrImage from "../assets/icons/qr-code.png";
+import qrImage from "../assets/qr-code.png";
 const isFlipped = ref(false);
 definePageMeta({
   layout: "contact",
