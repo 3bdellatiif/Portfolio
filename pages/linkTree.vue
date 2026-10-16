@@ -25,17 +25,16 @@
             </div>
 
             <!-- Back: QR Code -->
-            <div
+            <!-- <div
               class="absolute inset-0 w-full h-full rounded-full bg-gradient-to-b from-zinc-700 via-zinc-800 to-transparent [transform:rotateY(180deg)] [backface-visibility:hidden]"
             >
-              <!-- Replace the src with your own QR code or an API-generated code -->
-              <img
+               <img
                 :src="qrImage"
                 alt="Website QR Code"
                 class="w-full h-full rounded-xl object-cover"
                 loading="lazy"
-              />
-            </div>
+              /> 
+            </div> -->
           </div>
         </div>
         <h1 class="text-xl font-semibold tracking-tight text-zinc-100">
@@ -60,6 +59,7 @@
 
 <script setup>
 const { owner } = usePortfolio();
+// import qrImage from "../assets/qr-code.png";
 import qrImage from "../assets/qr-code.png";
 const isFlipped = ref(false);
 definePageMeta({

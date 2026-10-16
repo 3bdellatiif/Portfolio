@@ -2078,7 +2078,7 @@ const _OrquUkjOcrtAZDCCvo0QPlEgYV0e6EKldS74W44I05w = (function(nitro) {
 
 const rootDir = "W:/Portfolio";
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[{"innerHTML":"if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js')"}],"noscript":[],"htmlAttrs":{"lang":"en"}};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/svg+xml","href":"./assets/favicon.svg"}],"style":[],"script":[{"innerHTML":"if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js')"}],"noscript":[],"htmlAttrs":{"lang":"en"}};
 
 const appRootTag = "div";
 
@@ -2192,22 +2192,7 @@ _s3XW3_CVZZ1rlPz_YEx2uYCOR9Sgdo9NAnl19bbFks,
 _wH6JrtIxmaSoA8lCPWFnE9z4lQeXW6H5z3l5aymEQw
 ];
 
-const assets = {
-  "/index.mjs": {
-    "type": "text/javascript; charset=utf-8",
-    "etag": "\"1b7ba-7srG2Tx8keZtinpaJwLWLsUZvf4\"",
-    "mtime": "2026-10-16T00:00:33.504Z",
-    "size": 112570,
-    "path": "index.mjs"
-  },
-  "/index.mjs.map": {
-    "type": "application/json",
-    "etag": "\"6e094-IgMNXOdM4iuJZSbThzT4oBSUvis\"",
-    "mtime": "2026-10-16T00:00:33.504Z",
-    "size": 450708,
-    "path": "index.mjs.map"
-  }
-};
+const assets = {};
 
 function readAsset (id) {
   const serverDir = dirname$1(fileURLToPath(globalThis._importMeta_.url));
